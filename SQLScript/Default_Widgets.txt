@@ -1,0 +1,51 @@
+INSERT INTO tWidgets(Code, 
+                     Title_Fr, 
+                     Image_Fr, 
+                     Title_En, 
+                     Image_En,
+                     OrderNo) 
+VALUES('Wid_1', 
+       'Lignes de code', 
+       'pe-7s-monitor', 
+       'Lines of code', 
+       'pe-7s-monitor',
+       1);
+       
+INSERT INTO tWidgets(Code, 
+                     Title_Fr, 
+                     Image_Fr, 
+                     Title_En, 
+                     Image_En,
+                     OrderNo) 
+VALUES('Wid_2', 
+       'Années d\'expérience', 
+       'pe-7s-date', 
+       'Years of experience', 
+       'pe-7s-date',
+       2);
+       
+INSERT INTO tWidgets(Code, 
+                     Title_Fr, 
+                     Image_Fr, 
+                     Title_En, 
+                     Image_En,
+                     OrderNo) 
+VALUES('Wid_3', 
+       'Tasses de café', 
+       'pe-7s-coffee', 
+       'Coffee cups', 
+       'pe-7s-coffee',
+       3);
+       
+INSERT INTO tWidgets(Code, 
+                     Title_Fr, 
+                     Image_Fr, 
+                     Title_En, 
+                     Image_En,
+                     OrderNo) 
+VALUES('Wid_4', 
+       'Billets de support', 
+       'pe-7s-help2', 
+       'Support tickets', 
+       'pe-7s-help2',
+       4);                    

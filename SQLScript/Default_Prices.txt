@@ -1,0 +1,51 @@
+INSERT INTO tPrices(Code, 
+                    Title_Fr, 
+                    Desc_Fr, 
+                    Title_En, 
+                    Desc_En,
+                    OrderNo) 
+VALUES('Pri_1', 
+       'Prix Boomerang 2013 - Site ou application transactionelle', 
+       'Jean Coutu a revu son site internet pour mieux accompagner sa clientèle une fois à la maison. Achats en ligne, commande de prescriptions, infolettres ont amélioré l’expérience virtuelle du consommateur.', 
+       'Prix Boomerang 2013 - Site ou application transactionelle', 
+       'Jean Coutu a revu son site internet pour mieux accompagner sa clientèle une fois à la maison. Achats en ligne, commande de prescriptions, infolettres ont amélioré l’expérience virtuelle du consommateur.',
+       1);
+       
+INSERT INTO tPrices(Code, 
+                    Title_Fr, 
+                    Desc_Fr, 
+                    Title_En, 
+                    Desc_En,
+                    OrderNo) 
+VALUES('Pri_2', 
+       'Bell 2014 - Mérite Encore Plus', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Bell 2014 - Mérite Encore Plus', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       2);
+       
+INSERT INTO tPrices(Code, 
+                    Title_Fr, 
+                    Desc_Fr, 
+                    Title_En, 
+                    Desc_En,
+                    OrderNo) 
+VALUES('Pri_3', 
+       'Bell 2015 - Mérite Encore', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Bell 2015 - Mérite Encore', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       3);
+       
+INSERT INTO tPrices(Code, 
+                    Title_Fr, 
+                    Desc_Fr, 
+                    Title_En, 
+                    Desc_En,
+                    OrderNo) 
+VALUES('Pri_4', 
+       'Bell 2014 - Mérite Encore', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Bell 2014 - Mérite Encore', 
+       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       4);                     

@@ -1,0 +1,4 @@
+INSERT INTO tSystem(Code, 
+                    Data) 
+VALUES('LastDateModified', 
+       'Sat, 20 Feb 2016 00:00:00 GMT');
