@@ -278,26 +278,26 @@
         <!-- =========================================
         fav & icons for iPhone and iPad
         ========================================== -->
-        <link rel="shortcut icon" href="images/icons/favicon.ico" />
-        <link rel="apple-touch-icon-precomposed" href="images/icons/icon.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/icon@2x.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/icon-72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/icon-72@2x.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/icon-60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/icon-60@2x.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/icon-76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/icon-76@2x.png" />
+        <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="/images/icons/icon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icons/icon@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icons/icon-72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icons/icon-72@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/icons/icon-60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/icons/icon-60@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/icons/icon-76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/icons/icon-76@2x.png" />
 
         <!-- =========================================
         CSS
         ========================================== -->
-        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" media="screen" href="css/syt_style.min.css" />
+        <link rel="stylesheet" media="screen" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" media="screen" href="/css/syt_style.min.css" />
 
         <!-- =========================================
         Head Libs
         ========================================== -->
-        <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
+        <script type="text/javascript" src="/js/vendor/modernizr.custom.js"></script>
 
         <!-- =========================================
         Google Analytics
@@ -329,7 +329,7 @@
         <div id="loader">
             <!-- loader-container -->
             <div id="loader-container">
-                <img src="images/loader.gif" alt="<?php echo $sAltLoader; php?>" />
+                <img src="/images/loader.gif" alt="<?php echo $sAltLoader; php?>" />
             </div><!-- /loader-container -->
         </div><!-- /loader -->
 
@@ -430,7 +430,7 @@
                 <div id="profile-container">
                     <!-- logo -->
                     <a href="<?php echo $sUrl; php?>" target="_self" class="navbar-brand" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'profile-container');">
-                    	<img class="lazy-load" src="images/blank.png" data-src="images/logo.png" alt="<?php echo $sAltLogo; php?>" />
+                    	<img class="lazy-load" src="/images/blank.png" data-src="/images/logo.png" alt="<?php echo $sAltLogo; php?>" />
                     </a><!-- /logo -->
                 </div><!-- /profile-container -->
             </div><!-- /profile-wrapper -->
@@ -456,7 +456,7 @@
                             <div class="navbar-header">
                                 <!-- logo -->
                                 <a href="<?php echo $sUrl; php?>" target="_self" class="navbar-brand" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'navbar-header');">
-                                    <img class="lazy-load" src="images/blank.png" data-src="images/logo.png" alt="<?php echo $sAltLogo; php?>" />
+                                    <img class="lazy-load" src="/images/blank.png" data-src="/images/logo.png" alt="<?php echo $sAltLogo; php?>" />
                                 </a><!-- /logo -->
                             </div><!-- /navbar-header -->
                             <!-- menu-button -->
@@ -504,7 +504,7 @@
                                     </li><!-- /Contact -->
                                     <!-- Lang -->
                                     <li>
-                                        <a href="<?php echo $sUrl2; php?>" onClick="ga('send', 'event', 'xxx', 'Click', 'navbar-nav - <?php echo $sSwitchLang; php?>');">
+                                        <a href="<?php echo $sUrl2; php?>" onClick="ga('send', 'event', 'SwitchLang', 'Click', 'Mobile - <?php echo $sSwitchLang; php?>');">
                                             <?php echo $sSwitchLang; php?>
                                         </a>
                                     </li><!-- /Lang -->
@@ -678,7 +678,7 @@ if ($oResultResumes->num_rows > 0) {
                                         <div class="resume-wrapper">
                                             <!-- resume-image -->
                                             <div class="resume-image">
-                                                <img class="lazy-load" src="images/blank.png" alt="'.$oRow['ImageAlt'.$sLangDB].'" data-src="'.$oRow['Image'.$sLangDB].'" />
+                                                <img class="lazy-load" src="/images/blank.png" alt="'.$oRow['ImageAlt'.$sLangDB].'" data-src="'.$oRow['Image'.$sLangDB].'" />
                                                 <!-- resume-date -->
                                                 <div class="resume-date">
                                                     <p>'.$oRow['Date'.$sLangDB].'</p>
@@ -931,7 +931,7 @@ php?>
 	                        <div class="footer-logo wow fadeInDown" data-wow-duration="1.5s">
 	                            <!-- logo -->
                                 <a href="<?php echo $sUrl; php?>" target="_self" class="scrollto" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'footer-logo');">
-                                    <img class="lazy-load" src="images/blank.png" data-src="images/logo.png" alt="<?php echo $sLogo; php?>" />
+                                    <img class="lazy-load" src="/images/blank.png" data-src="/images/logo.png" alt="<?php echo $sLogo; php?>" />
                                 </a><!-- /logo -->
 	                        </div><!-- /footer-logo -->
 	                        
@@ -977,13 +977,13 @@ php?>
         	var contact_InvalidSubject = "<?php echo $sContact_InvalidSubject; php?>";
         	var contact_InvalidMessage = "<?php echo $sContact_InvalidMessage; php?>";
         </script>        
-        <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/plugins/plugin.min.js"></script>
-        <script type="text/javascript" src="js/Sponshy.min.js"></script>       
+        <script type="text/javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/plugins/plugin.min.js"></script>
+        <script type="text/javascript" src="/js/Sponshy.min.js"></script>       
         <!--[if lt IE 9]>
-            <script src="js/plugins/html5shiv.min.js"></script>
-            <script src="js/plugins/selectivizr.min.js"></script>
+            <script src="/js/plugins/html5shiv.min.js"></script>
+            <script src="/js/plugins/selectivizr.min.js"></script>
         <![endif]-->
         
         <!-- =========================================
@@ -1024,7 +1024,7 @@ php?>
 
         		if (skillsDone == 0) {
             	    if(jQuery(window).scrollTop() >= jQuery('#skills-section').offset().top - window.innerHeight) {
-            	    	jQuery('#skills-section').css('background-image', 'url(images/background/skillsbg.jpg)');
+            	    	jQuery('#skills-section').css('background-image', 'url(/images/background/skillsbg.jpg)');
             	    	ga('send', 'event', 'Skills', 'ScrollTo', '');
             	        skillsDone = 1;
             	    }            		
@@ -1045,7 +1045,7 @@ php?>
 
         		if (widgetsDone == 0) {
             	    if(jQuery(window).scrollTop() >= jQuery('#numbers-section').offset().top - window.innerHeight) {
-            	    	jQuery('#numbers-section').css('background-image', 'url(images/background/numbersbg.jpg)');
+            	    	jQuery('#numbers-section').css('background-image', 'url(/images/background/numbersbg.jpg)');
             	    	ga('send', 'event', 'Widgets', 'ScrollTo', '');
             	        widgetsDone = 1;
             	    }            		
@@ -1066,7 +1066,7 @@ php?>
 
         		if (contactDone == 0) {
             	    if(jQuery(window).scrollTop() >= jQuery('#contact-section').offset().top - window.innerHeight) {
-            	    	jQuery('#contact-section').css('background-image', 'url(images/background/testimonialsbg.jpg)');
+            	    	jQuery('#contact-section').css('background-image', 'url(/images/background/testimonialsbg.jpg)');
             	    	ga('send', 'event', 'Contact', 'ScrollTo', '');
             	        contactDone = 1;
             	    }            		
