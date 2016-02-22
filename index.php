@@ -189,6 +189,8 @@
     	$sContact_InvalidEmail2 = 'Veuillez entrer un courriel valide!';
     	$sContact_InvalidSubject = 'Le sujet est requis!';
     	$sContact_InvalidMessage = 'Le message est requis!';
+    	$sPhone = 'Téléphone: ';
+    	$sEmail = 'Courriel: ';
     }
     else {
     	$sSwitchLang = 'Français';
@@ -231,6 +233,8 @@
     	$sContact_InvalidEmail2 = 'Please enter a valid email!';
     	$sContact_InvalidSubject = 'Your subject is required!';
     	$sContact_InvalidMessage = 'Your message is required!';
+    	$sPhone = 'Phone: ';
+    	$sEmail = 'Email: ';
     }
 ?>
 
@@ -395,11 +399,7 @@
                         </nav><!-- /navbar-collapse -->
                         <!-- widget widget-social -->
                         <div class="widget widget-social">
-                            <!-- widget-title -->
-                            <div class="widget-title">
-                                <h5><?php echo $sFollowMe; php?></h5>
-                            </div><!-- /widget-title -->
-                            <ul>
+                            <ul class="social-icons">
                                 <li>
                                     <a href="https://www.facebook.com/yannick.thibault" class="facebook" title="Facebook" target="_blank" onClick="ga('send', 'social', 'Facebook', 'Send', 'https://www.facebook.com/yannick.thibault');">
                                         <i class="fa fa-facebook"></i>
@@ -909,7 +909,7 @@ php?>
                                         <!-- form-message -->
                                         <div class="form-message"></div>
                                     </div><!-- /col-md-12 -->
-                                </form><!-- /form -->
+                                </form><!-- /form -->                                
                             </div><!-- /row -->
                         </div><!-- /col-md-12 -->
                     </div><!-- /row -->
@@ -934,12 +934,19 @@ php?>
                                     <img class="lazy-load" src="images/blank.png" data-src="images/logo.png" alt="<?php echo $sLogo; php?>" />
                                 </a><!-- /logo -->
 	                        </div><!-- /footer-logo -->
+	                        
+	                       <p class="quickcontact wow fadeIn" data-wow-duration="1.5s">
+                           		<strong><?php echo $sPhone; php?></strong>514-250-7010<br/>
+                           		<strong><?php echo $sEmail; php?></strong><a title="Curriel" href="mailto:contact@solutionsyannickthibault.com" target="_blank">contact@solutionsyannickthibault.com</a>
+                           </p<!-- /section-desc -->
+	                        
                             <!-- social-icons -->
                             <ul class="social-icons wow fadeInUp" data-wow-duration="1.5s">
                                 <li><a href="https://www.facebook.com/yannick.thibault" title="Facebook" target="_blank" onClick="ga('send', 'social', 'Facebook', 'Send', 'https://www.facebook.com/yannick.thibault');"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/YannickThibault" title="Twitter" target="_blank" onClick="ga('send', 'social', 'Twitter', 'Send', 'https://twitter.com/YannickThibault');"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/yannickthibault" title="Linkedin" target="_blank" onClick="ga('send', 'social', 'Linkedin', 'Send', 'https://www.linkedin.com/in/yannickthibault');"><i class="fa fa-linkedin"></i></a></li>
                             </ul><!-- /social-icons -->
+                            
                             <!-- copyright -->
                             <p class="copyright wow fadeIn" data-wow-duration="1.5s">
                                 <?php echo $sCopyrights; php?>
