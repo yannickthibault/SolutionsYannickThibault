@@ -1426,6 +1426,13 @@ nav.navbar-collapse.collapse {
     background-color: #ffffff;
 }
 
+#legal-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 90px 0 45px;
+    background-color: #ffffff;
+}
+
 /* 8.2 Feature Box
 -------------------------------------------------------------------------- */
 /* 8.2.1 Wrapper
@@ -4083,6 +4090,7 @@ body.dark-version,
 .dark-version #pricing-section,
 .dark-version #content-wrapper,
 .dark-version #services-section,
+.dark-version #legal-section,
 .dark-version #portfolio-section,
 .dark-version .table-button a.btn,
 .dark-version .post-wrapper .post-link a,

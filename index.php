@@ -191,6 +191,10 @@
     	$sContact_InvalidMessage = 'Le message est requis!';
     	$sPhone = 'Téléphone: ';
     	$sEmail = 'Courriel: ';
+    	$sTerms = 'Conditions d\'utilisation';
+    	$sTermsUrl = 'http://www.solutionsyannickthibault.com/juridique/termes-conditions';    	
+    	$sPrivacy = 'Politique de confidentialité';
+    	$sPrivacyUrl = 'http://www.solutionsyannickthibault.com/juridique/politique-vie-privee';
     }
     else {
     	$sSwitchLang = 'Français';
@@ -235,6 +239,10 @@
     	$sContact_InvalidMessage = 'Your message is required!';
     	$sPhone = 'Phone: ';
     	$sEmail = 'Email: ';
+    	$sTerms = 'Terms of use';
+    	$sTermsUrl = 'http://www.solutionsyannickthibault.com/en/legal/terms-conditions';
+    	$sPrivacy = 'Privacy policy';
+    	$sPrivacyUrl = 'http://www.solutionsyannickthibault.com/en/legal/privacy-policy';    	
     }
 ?>
 
@@ -937,7 +945,7 @@ php?>
 	                        
 	                       <p class="quickcontact wow fadeIn" data-wow-duration="1.5s">
                            		<strong><?php echo $sPhone; php?></strong>514-250-7010<br/>
-                           		<strong><?php echo $sEmail; php?></strong><a title="Curriel" href="mailto:contact@solutionsyannickthibault.com" target="_blank">contact@solutionsyannickthibault.com</a>
+                           		<strong><?php echo $sEmail; php?></strong><a title="<?php echo $sEmail; php?>" href="mailto:contact@solutionsyannickthibault.com" target="_blank" onClick="ga('send', 'event', 'Email', 'Click', 'footer-section');">contact@solutionsyannickthibault.com</a>
                            </p<!-- /section-desc -->
 	                        
                             <!-- social-icons -->
@@ -949,7 +957,7 @@ php?>
                             
                             <!-- copyright -->
                             <p class="copyright wow fadeIn" data-wow-duration="1.5s">
-                                <?php echo $sCopyrights; php?>
+                                <?php echo $sCopyrights; php?> | <a href="<?php echo $sTermsUrl; php?>" title="<?php echo $sTerms; php?>" target="_blank" onClick="ga('send', 'event', 'terms-conditions', 'Click', 'footer-section');"><?php echo $sTerms; php?></a> | <a href="<?php echo $sPrivacyUrl; php?>" title="<?php echo $sPrivacy; php?>" target="_blank" onClick="ga('send', 'event', 'privacy-policy', 'Click', 'footer-section');"><?php echo $sPrivacy; php?></a>
                             </p><!-- /copyright -->
                         </div><!-- /col-md-12 -->
                     </div><!-- /row -->
