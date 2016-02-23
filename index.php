@@ -842,45 +842,7 @@ php?>
                 </div><!-- /container -->
             </div><!-- /contact-section -->
 
-            <!-- =========================================
-            Footer Section
-            ========================================== -->
-            <!-- footer-section -->
-            <footer id="footer-section">
-                <!-- container -->
-                <div class="container">
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col-md-12 -->
-                        <div class="col-md-12">
-             	            <!-- footer-logo -->
-	                        <div class="footer-logo wow fadeInDown" data-wow-duration="1.5s">
-	                            <!-- logo -->
-                                <a href="<?php echo $sUrl; php?>" target="_self" class="scrollto" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'footer-logo');">
-                                    <img class="lazy-load" src="/images/blank.png" data-src="/images/logo.png" alt="<?php echo $sLogo; php?>" />
-                                </a><!-- /logo -->
-	                        </div><!-- /footer-logo -->
-	                        
-	                       <p class="quickcontact wow fadeIn" data-wow-duration="1.5s">
-                           		<strong><?php echo $sPhone; php?></strong>514-250-7010<br/>
-                           		<strong><?php echo $sEmail; php?></strong><a title="<?php echo $sEmail; php?>" href="mailto:contact@solutionsyannickthibault.com" target="_blank" onClick="ga('send', 'event', 'Email', 'Click', 'footer-section');">contact@solutionsyannickthibault.com</a>
-                           </p<!-- /section-desc -->
-	                        
-                            <!-- social-icons -->
-                            <ul class="social-icons wow fadeInUp" data-wow-duration="1.5s">
-                                <li><a href="https://www.facebook.com/yannick.thibault" title="Facebook" target="_blank" onClick="ga('send', 'social', 'Facebook', 'Send', 'https://www.facebook.com/yannick.thibault');"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/YannickThibault" title="Twitter" target="_blank" onClick="ga('send', 'social', 'Twitter', 'Send', 'https://twitter.com/YannickThibault');"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/yannickthibault" title="Linkedin" target="_blank" onClick="ga('send', 'social', 'Linkedin', 'Send', 'https://www.linkedin.com/in/yannickthibault');"><i class="fa fa-linkedin"></i></a></li>
-                            </ul><!-- /social-icons -->
-                            
-                            <!-- copyright -->
-                            <p class="copyright wow fadeIn" data-wow-duration="1.5s">
-                                <?php echo $sCopyrights; php?> | <a href="<?php echo $sTermsUrl; php?>" title="<?php echo $sTerms; php?>" target="_blank" onClick="ga('send', 'event', 'terms-conditions', 'Click', 'footer-section');"><?php echo $sTerms; php?></a> | <a href="<?php echo $sPrivacyUrl; php?>" title="<?php echo $sPrivacy; php?>" target="_blank" onClick="ga('send', 'event', 'privacy-policy', 'Click', 'footer-section');"><?php echo $sPrivacy; php?></a>
-                            </p><!-- /copyright -->
-                        </div><!-- /col-md-12 -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
-            </footer><!-- /footer-section -->
+            <?php include( '\php\footer\footer.php' ); php?>
             
         </div><!-- /content-wrapper -->
 
@@ -904,14 +866,8 @@ php?>
         	var contact_InvalidSubject = "<?php echo $sContact_InvalidSubject; php?>";
         	var contact_InvalidMessage = "<?php echo $sContact_InvalidMessage; php?>";
         </script>        
-        <script type="text/javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="/js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/js/plugins/plugin.min.js"></script>
-        <script type="text/javascript" src="/js/Sponshy.min.js"></script>       
-        <!--[if lt IE 9]>
-            <script src="/js/plugins/html5shiv.min.js"></script>
-            <script src="/js/plugins/selectivizr.min.js"></script>
-        <![endif]-->
+      
+      	<?php include( '\php\footer\scripts.php' ); php?>
         
         <!-- =========================================
         java script for Sections scroll
@@ -1011,13 +967,6 @@ php?>
         	});        	
         	
         </script>          
-
-        <!-- =========================================
-        java script for lazy loading of images
-        ========================================== -->
-        <script type="text/javascript">
-			!function(){function e(e){var t=0;if(e.offsetParent){do t+=e.offsetTop;while(e=e.offsetParent);return t}}var t=window.addEventListener||function(e,t){window.attachEvent("on"+e,t)},o=window.removeEventListener||function(e,t,o){window.detachEvent("on"+e,t)},n={cache:[],mobileScreenSize:500,addObservers:function(){t("scroll",n.throttledLoad),t("resize",n.throttledLoad)},removeObservers:function(){o("scroll",n.throttledLoad,!1),o("resize",n.throttledLoad,!1)},throttleTimer:(new Date).getTime(),throttledLoad:function(){var e=(new Date).getTime();e-n.throttleTimer>=200&&(n.throttleTimer=e,n.loadVisibleImages())},loadVisibleImages:function(){for(var t=window.pageYOffset||document.documentElement.scrollTop,o=window.innerHeight||document.documentElement.clientHeight,r={min:t-300,max:t+o+300},i=0;i<n.cache.length;){var a=n.cache[i],c=e(a),l=a.height||0;if(c>=r.min-l&&c<=r.max){var s=a.getAttribute("data-src-mobile");a.onload=function(){this.className="lazy-loaded"},s&&screen.width<=n.mobileScreenSize?a.src=s:a.src=a.getAttribute("data-src"),a.removeAttribute("data-src"),a.removeAttribute("data-src-mobile"),n.cache.splice(i,1)}else i++}0===n.cache.length&&n.removeObservers()},init:function(){document.querySelectorAll||(document.querySelectorAll=function(e){var t=document,o=t.documentElement.firstChild,n=t.createElement("STYLE");return o.appendChild(n),t.__qsaels=[],n.styleSheet.cssText=e+"{x:expression(document.__qsaels.push(this))}",window.scrollBy(0,0),t.__qsaels}),t("load",function e(){for(var t=document.querySelectorAll("img[data-src]"),r=0;r<t.length;r++){var i=t[r];n.cache.push(i)}n.addObservers(),n.loadVisibleImages(),o("load",e,!1)})}};n.init()}();
-		</script>
 				
     </body><!-- /body -->
 </html><!-- /html -->
