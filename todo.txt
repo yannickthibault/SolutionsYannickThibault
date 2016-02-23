@@ -1,2 +1,1 @@
-1- UserControl for Header
-2- UserControl for Header Mobile
+1- Menu mobile, auto-close on click

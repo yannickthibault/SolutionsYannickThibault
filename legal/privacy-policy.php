@@ -67,13 +67,6 @@
     	$sUrl = 'http://www.solutionsyannickthibault.com';
     	$sUrl2 = 'http://www.solutionsyannickthibault.com/en/legal/privacy-policy';
     	$sTitle = 'Solutions Yannick Thibault';
-    	$sShortTitle = 'Yannick Thibault';
-    	$sHome = 'Accueil';
-    	$sServices = 'Services';
-    	$sSkills = 'Compétences';
-    	$sResume = 'CV';
-    	$sContact = 'Contact';
-    	$sFollowMe = 'Me suivre';
     	$sAltLogo = 'Logo';
 		$dNowCopyrights = new DateTime();
 		$sYearCopyrights = $dNowCopyrights->format("Y");
@@ -89,8 +82,7 @@
     	$sSwitchLang = 'Français';
     	$sUrl = 'http://www.solutionsyannickthibault.com/en';
     	$sUrl2 = 'http://www.solutionsyannickthibault.com/juridique/politique-vie-privee';
-    	$sTitle = 'Yannick Thibault Solutions';
-    	$sShortTitle = 'Yannick Thibault';  	
+    	$sTitle = 'Yannick Thibault Solutions';	
     	$sHome = 'Home';
     	$sServices = 'Services';
     	$sSkills = 'Skills';
@@ -130,190 +122,15 @@
     
         <?php include( '..\php\header\legacybrowser.php' ); php?>
         <?php include( '..\php\header\loader.php' ); php?>
-
-        <!-- =========================================
-        Top Content
-        ========================================== -->
-        <!-- top-content -->
-        <div id="top-content">
-            <!-- top-content-overlayer -->
-            <div id="top-content-overlayer"></div>
-            <!-- =========================================
-            Menu
-            ========================================== -->
-            <!-- slide-menu-wrapper -->
-            <div id="slide-menu-wrapper">
-                <!-- slide-menu-scroller -->
-                <div id="slide-menu-scroller">
-                    <!-- slide-menu-container -->
-                    <div id="slide-menu-container">
-                        <!-- mobile-menu -->
-                        <nav class="mobile-menu">
-                            <!-- nav -->
-                            <ul>
-                                <!-- Home -->
-                                <li>
-                                    <a href="<?php echo $sUrl; php?>/#home-section" title="<?php echo $sHome; php?>" onClick="ga('send', 'event', 'Home', 'Click', 'mobile-menu');">
-                                        <?php echo $sHome; php?>
-                                    </a>
-                                </li>
-                                <!-- /Home -->
-                                <!-- Services -->
-                                <li>
-                                    <a href="#services-section" title="<?php echo $sServices; php?>" onClick="ga('send', 'event', 'Services', 'Click', 'mobile-menu');">
-                                        <?php echo $sServices; php?>
-                                    </a>
-                                </li>
-                                <!-- /Services -->
-                                <!-- Skills -->
-                                <li>
-                                    <a href="<?php echo $sUrl; php?>/#skills-section" title="<?php echo $sSkills; php?>" onClick="ga('send', 'event', 'Skills', 'Click', 'mobile-menu');">
-                                        <?php echo $sSkills; php?>
-                                    </a>
-                                </li>
-                                <!-- /Skills -->
-                                <!-- Resume -->
-                                <li>
-                                    <a href="<?php echo $sUrl; php?>/#resume-section" title="<?php echo $sResume; php?>" onClick="ga('send', 'event', 'Resumes', 'Click', 'mobile-menu');">
-                                        <?php echo $sResume; php?>
-                                    </a>
-                                </li>
-                                <!-- /Resume -->
-                                <!-- Contact -->
-                                <li>
-                                    <a href="<?php echo $sUrl; php?>/#contact-section" title="<?php echo $sContact; php?>" onClick="ga('send', 'event', 'Contact', 'Click', 'mobile-menu');">
-                                        <?php echo $sContact; php?>
-                                    </a>
-                                </li>
-                                <!-- /Contact -->
-                                <!-- Lang -->
-                                <li>
-                                    <a href="<?php echo $sUrl2; php?>" onClick="ga('send', 'event', 'SwitchLang', 'Click', 'Mobile - <?php echo $sSwitchLang; php?>');">
-                                        <?php echo $sSwitchLang; php?>
-                                    </a>
-                                </li>
-                                <!-- /Lang -->
-                            </ul><!-- /nav -->
-                        </nav><!-- /navbar-collapse -->
-                        <!-- widget widget-social -->
-                        <div class="widget widget-social">
-                            <ul class="social-icons">
-                                <li>
-                                    <a href="https://www.facebook.com/yannick.thibault" class="facebook" title="Facebook" target="_blank" onClick="ga('send', 'social', 'Facebook', 'Send', 'https://www.facebook.com/yannick.thibault');">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/YannickThibault" class="twitter" title="Twitter" target="_blank" onClick="ga('send', 'social', 'Twitter', 'Send', 'https://twitter.com/YannickThibault');">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/yannickthibault" class="linkedin" title="Linkedin" target="_blank" onClick="ga('send', 'social', 'Linkedin', 'Send', 'https://www.linkedin.com/in/yannickthibault');">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- /widget widget-social -->
-                    </div><!-- /slide-menu-container -->
-                </div><!-- /slide-menu-scroller -->
-            </div><!-- /slide-menu-wrapper -->
-
-            <!-- =========================================
-            Profile
-            ========================================== -->
-            <!-- profile-wrapper -->
-            <div id="profile-wrapper">
-                <!-- profile-container -->
-                <div id="profile-container">
-                    <!-- logo -->
-                    <a href="<?php echo $sUrl; php?>" target="_self" class="navbar-brand" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'profile-container');">
-                    	<img class="lazy-load" src="/../images/blank.png" data-src="/../images/logo.png" alt="<?php echo $sAltLogo; php?>" />
-                    </a><!-- /logo -->
-                </div><!-- /profile-container -->
-            </div><!-- /profile-wrapper -->
-        </div><!-- /top-content -->
+        <?php include( '..\php\header\menumobile.php' ); php?>
 
         <!-- =========================================
         Content
         ========================================== -->
         <!-- content-wrapper -->
         <div id="content-wrapper">
-            <!-- =========================================
-            Menu
-            ========================================== -->
-            <!-- menu-wrapper -->
-            <header id="menu-wrapper">
-                <!-- container -->
-                <div class="container">
-                    <!-- row -->
-                    <div class="row">
-                        <!-- col-md-12 -->
-                        <div class="col-md-12">
-                            <!-- navbar-header -->
-                            <div class="navbar-header">
-                                <!-- logo -->
-                                <a href="<?php echo $sUrl; php?>" target="_self" class="navbar-brand" title="<?php echo $sTitle; php?>" onClick="ga('send', 'event', 'Logo', 'Click', 'navbar-header');">
-                                    <img class="lazy-load" src="/../images/blank.png" data-src="/../images/logo.png" alt="<?php echo $sAltLogo; php?>" />
-                                </a><!-- /logo -->
-                            </div><!-- /navbar-header -->
-                            <!-- menu-button -->
-                            <button class="menu-button" id="open-button" onClick="ga('send', 'event', 'Menu', 'Click', 'menu-button');">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <!-- /menu-button -->
-                            <!-- navbar-collapse -->
-                            <nav class="navbar-collapse collapse">
-                                <!-- nav -->
-                                <ul class="nav navbar-nav navbar-right">
-                                    <!-- Home -->
-                                    <li>
-                                        <a href="<?php echo $sUrl; php?>/#home-section" title="Home" onClick="ga('send', 'event', 'Home', 'Click', 'navbar-nav');">
-                                            <?php echo $sHome; php?>
-                                        </a>
-                                    </li>
-                                    <!-- /Home -->
-                                    <!-- Services -->
-                                    <li>
-                                        <a href="<?php echo $sUrl; php?>/#services-section" title="Services" onClick="ga('send', 'event', 'Services', 'Click', 'navbar-nav');">
-                                            <?php echo $sServices; php?>
-                                        </a>
-                                    </li>
-                                    <!-- /Services -->
-                                    <!-- Skills -->
-                                    <li>
-                                        <a href="<?php echo $sUrl; php?>/#skills-section" title="Skills" onClick="ga('send', 'event', 'Skills', 'Click', 'navbar-nav');">
-                                            <?php echo $sSkills; php?>
-                                        </a>
-                                    </li>
-                                    <!-- /Skills -->
-                                    <!-- Resume -->
-                                    <li>
-                                        <a href="<?php echo $sUrl; php?>/#resume-section" title="Resume" onClick="ga('send', 'event', 'Resumes', 'Click', 'navbar-nav');">
-                                            <?php echo $sResume; php?>
-                                        </a>
-                                    </li>
-                                    <!-- /Resume -->
-                                    <!-- Contact -->
-                                    <li>
-                                        <a href="<?php echo $sUrl; php?>/#contact-section" title="Contact" onClick="ga('send', 'event', 'Contact', 'Click', 'navbar-nav');">
-                                            <?php echo $sContact; php?>
-                                        </a>
-                                    </li><!-- /Contact -->
-                                    <!-- Lang -->
-                                    <li>
-                                        <a href="<?php echo $sUrl2; php?>" onClick="ga('send', 'event', 'xxx', 'Click', 'navbar-nav - <?php echo $sSwitchLang; php?>');">
-                                            <?php echo $sSwitchLang; php?>
-                                        </a>
-                                    </li><!-- /Lang -->
-                                    <li>
-                                    </li>
-                                </ul><!-- /nav -->
-                            </nav><!-- /navbar-collapse -->
-                        </div><!-- /col-md-12 -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
-            </header><!-- /menu-wrapper -->    
+        
+			<?php include( '..\php\header\menu.php' ); php?>   
     
             <!-- =========================================
             Legal Section
