@@ -1,36 +1,3 @@
-<?php
-
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-    
-    // Translation
-    if ($sLang == 'fr') {
-    	$sUrl = 'http://www.solutionsyannickthibault.com';
-    	$sTitle = 'Solutions Yannick Thibault';
-    	$sAltLogo = 'Logo';
-    	$sHome = 'Accueil';
-    	$sServices = 'Services';
-    	$sSkills = 'Compétences';
-    	$sResume = 'CV';
-    	$sContact = 'Contact';  
-    	$sSwitchLang = 'English';
-    }
-    else {
-    	$sUrl = 'http://www.solutionsyannickthibault.com/en';
-    	$sTitle = 'Yannick Thibault Solutions';
-    	$sAltLogo = 'Logo';
-    	$sHome = 'Home';
-    	$sServices = 'Services';
-    	$sSkills = 'Skills';
-    	$sResume = 'Resume';
-    	$sContact = 'Contact';	
-    	$sSwitchLang = 'Français';    	
-    }
-php?>
-
             <!-- =========================================
             Menu
             ========================================== -->

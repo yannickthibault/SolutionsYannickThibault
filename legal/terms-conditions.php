@@ -1,98 +1,15 @@
 <?php
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-    
-    // Get DB Lang to use
-    if (strtoupper($sLang) == 'FR') {
-    	$sLangDB = '_Fr';
-    }
-    else {
-    	$sLangDB = '_En';
-    }
-   
-    // Set Scripts and CSSs version
-    $sScriptVersion = '11';
-    $sCSSVersion = '11';
-    
-    // DB Setting
-    $sServername = "198.71.227.97:3306";
-    $sUsername = "yannickthibault";
-    $sDbName = "syt";
-    
-  	// Get DB password
-    define( 'IN_CODE', '1' );
-    include( '..\..\config\config.php' );
-    $sPassword = PASSWORD_SYT;
-    
-    // Create connection
-    $oConn = new mysqli($sServername, $sUsername, $sPassword, $sDbName);
-    
-    // Check connection
-    if ($oConn->connect_error) {
-    	
-    	if ($sLang == 'fr') {
-    		die("La connexion a échoué: ".$oConn->connect_error);
-    	}
-    	else {
-    		die("Connection failed: ".$oConn->connect_error);
-    	}
-    }
-    else {
-    	// Get Last Date Modified
-    	$sSqlLastDateModified = "SELECT tSystem.Data
-    			                 FROM tSystem
-    			                 WHERE tSystem.Code = 'LastDateModified'";
-    	$oResultLastDateModified = $oConn->query($sSqlLastDateModified);
-	    	
-    	// Set Last Date Modified
-    	if ($oResultLastDateModified->num_rows > 0) {
-    		$oRow = $oResultLastDateModified->fetch_assoc();
-    		$sLastDateModified = $oRow['Data'];
-    	}   
-    	
-    	// Close Cnn
-    	$oConn->close();    	
-    }
-    
+	include_once( '..\php\header\globalvariables.php' );
+        
     $sBreakingNews = '';
     $sBreakingNewsActive = 'false';
     
     // Translation
     if ($sLang == 'fr') {
-
-    	$sSwitchLang = 'English';
-    	$sUrl = 'http://www.solutionsyannickthibault.com';
-    	$sUrl2 = 'http://www.solutionsyannickthibault.com/en/legal/terms-conditions';
-    	$sTitle = 'Solutions Yannick Thibault';
-    	$sAltLogo = 'Logo';
-		$dNowCopyrights = new DateTime();
-		$sYearCopyrights = $dNowCopyrights->format("Y");
-		$sCopyrights = '&copy; '.$sYearCopyrights.' <a href="'.$sUrl.'" title="Solutions Yannick Thibault" target="_self" onClick="ga(\'send\', \'event\', \'Copyrights\', \'Click\', \'Copyrights\');">Solutions Yannick Thibault</a>, tous droits réservés.';
-    	$sPhone = 'Téléphone: ';
-    	$sEmail = 'Courriel: ';
-    	$sTerms = 'Conditions d\'utilisation';
-    	$sTermsUrl = 'http://www.solutionsyannickthibault.com/juridique/termes-conditions';
-    	$sPrivacy = 'Politique de confidentialité';
-    	$sPrivacyUrl = 'http://www.solutionsyannickthibault.com/juridique/politique-vie-privee';    	
+    	$sUrl2 = 'http://www.solutionsyannickthibault.com/en/legal/terms-conditions'; 	
     }
     else {
-    	$sSwitchLang = 'Français';
-    	$sUrl = 'http://www.solutionsyannickthibault.com/en';
-    	$sUrl2 = 'http://www.solutionsyannickthibault.com/juridique/termes-conditions';
-    	$sTitle = 'Yannick Thibault Solutions';
-    	$sAltLogo = 'Logo';
-    	$dNowCopyrights = new DateTime();
-    	$sYearCopyrights = $dNowCopyrights->format("Y");
-    	$sCopyrights = '&copy; '.$sYearCopyrights.' <a href="'.$sUrl.'" title="Yannick Thibault Solutions" target="_self" onClick="ga(\'send\', \'event\', \'Copyrights\', \'Click\', \'Copyrights\');">Yannick Thibault Solutions</a>, all rights reserved.';
-    	$sPhone = 'Phone: ';
-    	$sEmail = 'Email: ';
-    	$sTerms = 'Terms of use';
-    	$sTermsUrl = 'http://www.solutionsyannickthibault.com/en/legal/terms-conditions';
-    	$sPrivacy = 'Privacy policy';
-    	$sPrivacyUrl = 'http://www.solutionsyannickthibault.com/en/legal/privacy-policy';    	
+    	$sUrl2 = 'http://www.solutionsyannickthibault.com/juridique/termes-conditions'; 	
     }    
 ?>    
 
@@ -194,6 +111,10 @@ php?>
             <?php include( '..\php\footer\footer.php' ); php?>
             
         </div><!-- /content-wrapper -->    
+    
+<?php
+	include_once( '..\php\footer\clean.php' );
+php?>    
     
         <!-- =========================================
         java script

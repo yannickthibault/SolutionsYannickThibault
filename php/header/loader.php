@@ -1,10 +1,4 @@
 <?php
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-
     // Translation
     if ($sLang == 'fr') {    	
     	$sAltLoader = 'Charger';

@@ -1,16 +1,6 @@
 <?php
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-
     // Translation
     if ($sLang == 'fr') {
-    	
-    	$sUrl = 'http://www.solutionsyannickthibault.com';
-    	$sTitle = 'Solutions Yannick Thibault';    
-    	$sAltLogo = 'Logo';    	
     	$dNowCopyrights = new DateTime();
     	$sYearCopyrights = $dNowCopyrights->format("Y");
     	$sCopyrights = '&copy; '.$sYearCopyrights.' <a href="'.$sUrl.'" title="Solutions Yannick Thibault" target="_self" onClick="ga(\'send\', \'event\', \'Copyrights\', \'Click\', \'Copyrights\');">Solutions Yannick Thibault</a>, tous droits réservés.';
@@ -21,10 +11,7 @@
     	$sPrivacy = 'Politique de confidentialité';
     	$sPrivacyUrl = 'http://www.solutionsyannickthibault.com/juridique/politique-vie-privee';    	
     }
-    else {
-    	$sUrl = 'http://www.solutionsyannickthibault.com/en';
-    	$sTitle = 'Yannick Thibault Solutions'; 
-    	$sAltLogo = 'Logo';    	
+    else {  	
     	$dNowCopyrights = new DateTime();
     	$sYearCopyrights = $dNowCopyrights->format("Y");
     	$sCopyrights = '&copy; '.$sYearCopyrights.' <a href="'.$sUrl.'" title="Yannick Thibault Solutions" target="_self" onClick="ga(\'send\', \'event\', \'Copyrights\', \'Click\', \'Copyrights\');">Yannick Thibault Solutions</a>, all rights reserved.';    	

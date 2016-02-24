@@ -1,167 +1,95 @@
-<?php
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-    
-    // Get DB Lang to use
-    if (strtoupper($sLang) == 'FR') {
-    	$sLangDB = '_Fr';
-    }
+<?php    
+	include_once( '\php\header\globalvariables.php' );
+	
+    // Get Prices
+    $sSqlPrices = "SELECT tPrices.Code, 
+                          tPrices.Title_Fr, 
+                          tPrices.Desc_Fr, 
+                          tPrices.Title_En, 
+                          tPrices.Desc_En,
+                          tPrices.OrderNo 
+    			    FROM tPrices 
+    			    ORDER BY tPrices.OrderNo ASC";
+    $oResultPrices = $oConn->query($sSqlPrices);
+    	
+    // Get Resumes
+    $sSqlResumes = "SELECT tResumes.Code, 
+                           tResumes.ImageAlt_Fr, 
+                           tResumes.Date_Fr, 
+                           tResumes.Title_Fr, 
+                           tResumes.Place_Fr, 
+                           tResumes.Desc_Fr, 
+                           tResumes.Image_Fr, 
+                           tResumes.Icon_Fr, 
+                           tResumes.ImageAlt_En, 
+                           tResumes.Date_En, 
+                           tResumes.Title_En, 
+                           tResumes.Place_En, 
+                           tResumes.Desc_En, 
+                           tResumes.Image_En, 
+                           tResumes.Icon_En,
+                           tResumes.OrderNo 
+    			    FROM tResumes 
+    			    ORDER BY tResumes.OrderNo ASC";
+    $oResultResumes = $oConn->query($sSqlResumes);
+    	
+    // Get Services
+    $sSqlServices = "SELECT tServices.Code, 
+                            tServices.Title_Fr, 
+                            tServices.Desc_Fr, 
+                            tServices.Image_Fr, 
+                            tServices.Title_En, 
+                            tServices.Desc_En, 
+                            tServices.Image_En,
+                            tServices.OrderNo 
+    			    FROM tServices
+    			    ORDER BY tServices.OrderNo ASC";
+    $oResultServices = $oConn->query($sSqlServices);
+    	
+    // Get Skills
+    $sSqlSkills = "SELECT tSkills.Code,
+                          tSkills.ID_Fr, 
+                          tSkills.Title_Fr, 
+                          tSkills.Desc_Fr, 
+                          tSkills.Number_Fr, 
+                          tSkills.ID_En, 
+                          tSkills.Title_En, 
+                          tSkills.Desc_En, 
+                          tSkills.Number_En,
+                          tSkills.OrderNo 
+    			    FROM tSkills 
+    			    ORDER BY tSkills.OrderNo ASC";
+    $oResultSkills = $oConn->query($sSqlSkills);
+    	
+    // Get Widgets
+    $sSqlWidgets = "SELECT tWidgets.Code, 
+                           tWidgets.Title_Fr, 
+                           tWidgets.Image_Fr, 
+                           tWidgets.Title_En, 
+                           tWidgets.Image_En,
+                           tWidgets.OrderNo 
+    			    FROM tWidgets 
+    			    ORDER BY tWidgets.OrderNo ASC";
+    $oResultWidgets = $oConn->query($sSqlWidgets);   
+    	
+    // Set Breaking New
+    if ($oResultBreakingNews->num_rows > 0) {
+    	$oRow = $oResultBreakingNews->fetch_assoc();
+    	$sBreakingNews = $oRow['News'.$sLangDB];
+    	$sBreakingNewsActive = 'true';
+    } 
     else {
-    	$sLangDB = '_En';
+    	$sBreakingNews = '';
+    	$sBreakingNewsActive = 'false';
     }
-   
-    // Set Scripts and CSSs version
-    $sScriptVersion = '11';
-    $sCSSVersion = '11';
     
-    // DB Setting
-    $sServername = "198.71.227.97:3306";
-    $sUsername = "yannickthibault";
-    $sDbName = "syt";
-    
-  	// Get DB password
-    define( 'IN_CODE', '1' );
-    include_once( '..\config\config.php' );
-    $sPassword = PASSWORD_SYT;
-    
-    // Create connection
-    $oConn = new mysqli($sServername, $sUsername, $sPassword, $sDbName);
-    
-    // Check connection
-    if ($oConn->connect_error) {
-    	
-    	if ($sLang == 'fr') {
-    		die("La connexion a échoué: ".$oConn->connect_error);
-    	}
-    	else {
-    		die("Connection failed: ".$oConn->connect_error);
-    	}
-    }
-    else {
-    	// Get Prices
-    	$sSqlPrices = "SELECT tPrices.Code, 
-                              tPrices.Title_Fr, 
-                              tPrices.Desc_Fr, 
-                              tPrices.Title_En, 
-                              tPrices.Desc_En,
-                              tPrices.OrderNo 
-    			       FROM tPrices 
-    			       ORDER BY tPrices.OrderNo ASC";
-    	$oResultPrices = $oConn->query($sSqlPrices);
-    	
-    	// Get Resumes
-    	$sSqlResumes = "SELECT tResumes.Code, 
-                               tResumes.ImageAlt_Fr, 
-                               tResumes.Date_Fr, 
-                               tResumes.Title_Fr, 
-                               tResumes.Place_Fr, 
-                               tResumes.Desc_Fr, 
-                               tResumes.Image_Fr, 
-                               tResumes.Icon_Fr, 
-                               tResumes.ImageAlt_En, 
-                               tResumes.Date_En, 
-                               tResumes.Title_En, 
-                               tResumes.Place_En, 
-                               tResumes.Desc_En, 
-                               tResumes.Image_En, 
-                               tResumes.Icon_En,
-                               tResumes.OrderNo 
-    			       FROM tResumes 
-    			       ORDER BY tResumes.OrderNo ASC";
-    	$oResultResumes = $oConn->query($sSqlResumes);
-    	
-    	// Get Services
-    	$sSqlServices = "SELECT tServices.Code, 
-                                tServices.Title_Fr, 
-                                tServices.Desc_Fr, 
-                                tServices.Image_Fr, 
-                                tServices.Title_En, 
-                                tServices.Desc_En, 
-                                tServices.Image_En,
-                                tServices.OrderNo 
-    			       FROM tServices
-    			       ORDER BY tServices.OrderNo ASC";
-    	$oResultServices = $oConn->query($sSqlServices);
-    	
-    	// Get Skills
-    	$sSqlSkills = "SELECT tSkills.Code,
-                              tSkills.ID_Fr, 
-                              tSkills.Title_Fr, 
-                              tSkills.Desc_Fr, 
-                              tSkills.Number_Fr, 
-                              tSkills.ID_En, 
-                              tSkills.Title_En, 
-                              tSkills.Desc_En, 
-                              tSkills.Number_En,
-                              tSkills.OrderNo 
-    			       FROM tSkills 
-    			       ORDER BY tSkills.OrderNo ASC";
-    	$oResultSkills = $oConn->query($sSqlSkills);
-    	
-    	// Get Widgets
-    	$sSqlWidgets = "SELECT tWidgets.Code, 
-                               tWidgets.Title_Fr, 
-                               tWidgets.Image_Fr, 
-                               tWidgets.Title_En, 
-                               tWidgets.Image_En,
-                               tWidgets.OrderNo 
-    			       FROM tWidgets 
-    			       ORDER BY tWidgets.OrderNo ASC";
-    	$oResultWidgets = $oConn->query($sSqlWidgets);   
-
-    	// Get Last Date Modified
-    	$sSqlLastDateModified = "SELECT tSystem.Data
-    			                 FROM tSystem
-    			                 WHERE tSystem.Code = 'LastDateModified'";
-    	$oResultLastDateModified = $oConn->query($sSqlLastDateModified);
-    	
-    	// Get Breaking News
-    	$sSqlBreakingNews = "SELECT tBreakingNews.News_Fr, 
-                                    tBreakingNews.News_En
-    			             FROM tBreakingNews
-    			             WHERE NOW() >= tBreakingNews.StartDate AND NOW() <= tBreakingNews.EndDate
-    			               AND tBreakingNews.News_Fr != ''
-    			               AND tBreakingNews.News_En != ''
-    			             ORDER BY tBreakingNews.StartDate DESC";
-    	$oResultBreakingNews = $oConn->query($sSqlBreakingNews);    	
-    	
-    	// Set Last Date Modified
-    	if ($oResultLastDateModified->num_rows > 0) {
-    		$oRow = $oResultLastDateModified->fetch_assoc();
-    		$sLastDateModified = $oRow['Data'];
-    	}   	
-
-    	// Set Breaking New
-    	if ($oResultBreakingNews->num_rows > 0) {
-    		$oRow = $oResultBreakingNews->fetch_assoc();
-    		$sBreakingNews = $oRow['News'.$sLangDB];
-    		$sBreakingNewsActive = 'true';
-    	} 
-    	else {
-    		$sBreakingNews = '';
-    		$sBreakingNewsActive = 'false';
-    	}
-    }
-  
     // Translation
     if ($sLang == 'fr') {
-
-    	$sUrl = 'http://www.solutionsyannickthibault.com';
     	$sUrl2 = 'http://www.solutionsyannickthibault.com/en';
-    	$sTitle = 'Solutions Yannick Thibault';
     	$sShortTitle = 'Yannick Thibault';
-    	$sHome = 'Accueil';
-    	$sServices = 'Services';
-    	$sSkills = 'Compétences';
-    	$sResume = 'CV';
-    	$sContact = 'Contact';
     	$sMyServices = 'Mes services';
     	$sProfileTypes = '\'Développeur\', \'Architecte\', \'Analyste\', \'Français/Anglais\'';
     	$sHereWhatIDo = 'Voici ce que je fais';
-    	$sAltLogo = 'Logo';
     	$sResumeTitle = 'Expériences de travail & scolarité';
     	$sDownloadResume = 'Télécharger CV';
     	$sDownloadResumeLink = '#';
@@ -184,19 +112,11 @@
     	$sEmail = 'Courriel: ';
     }
     else {
-    	$sUrl = 'http://www.solutionsyannickthibault.com/en';
     	$sUrl2 = 'http://www.solutionsyannickthibault.com';
-    	$sTitle = 'Yannick Thibault Solutions';
     	$sShortTitle = 'Yannick Thibault';  	
-    	$sHome = 'Home';
-    	$sServices = 'Services';
-    	$sSkills = 'Skills';
-    	$sResume = 'Resume';
-    	$sContact = 'Contact';
     	$sMyServices = 'My services';
     	$sProfileTypes = '\'Developer\', \'Architect\', \'Analyst\', \'French/English\'';
     	$sHereWhatIDo = 'Here is what I do';
-    	$sAltLogo = 'Logo';
     	$sResumeTitle = 'Work & education experience';
     	$sDownloadResume = 'Download resume';
     	$sDownloadResumeLink = '#';
@@ -654,8 +574,7 @@ php?>
         </div><!-- /content-wrapper -->
 
 <?php
-// Close Cnn
-$oConn->close();
+	include_once( '\php\footer\clean.php' );
 php?>
 
         <!-- =========================================

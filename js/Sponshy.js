@@ -41,6 +41,13 @@ jQuery(document).ready(function () {
             jQuery('body').removeClass('show-menu');
         }, 50);
     });
+    jQuery('.close-button').on('click', function () {
+        jQuery('body').removeClass('over-menu');
+        OBTimerC = setTimeout(function () {
+            jQuery('body').removeClass('show-menu');
+        }, 50);
+    });
+    
     clearTimeout(OBTimerO);
     clearTimeout(OBTimerC);
 

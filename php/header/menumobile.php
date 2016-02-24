@@ -1,35 +1,3 @@
-<?php
-	// Get Lang
-    $sLang = $_REQUEST['lang'];
-    if (empty($sLang)) {
-    	$sLang = 'fr';
-    }
-    
-    // Translation
-    if ($sLang == 'fr') {
-    	$sUrl = 'http://www.solutionsyannickthibault.com';
-    	$sTitle = 'Solutions Yannick Thibault';
-    	$sAltLogo = 'Logo';
-    	$sHome = 'Accueil';
-    	$sServices = 'Services';
-    	$sSkills = 'Compétences';
-    	$sResume = 'CV';
-    	$sContact = 'Contact';
-    	$sSwitchLang = 'English';
-    }
-    else {
-    	$sUrl = 'http://www.solutionsyannickthibault.com/en';
-    	$sTitle = 'Yannick Thibault Solutions';
-    	$sAltLogo = 'Logo';
-    	$sHome = 'Home';
-    	$sServices = 'Services';
-    	$sSkills = 'Skills';
-    	$sResume = 'Resume';
-    	$sContact = 'Contact';
-    	$sSwitchLang = 'Français';
-    }
-php?>
-
         <!-- =========================================
         Top Content
         ========================================== -->
@@ -52,35 +20,35 @@ php?>
                             <ul>
                                 <!-- Home -->
                                 <li>
-                                    <a href="<?php echo $sUrl; php?>/#home-section" title="<?php echo $sHome; php?>" data-scroll onClick="ga('send', 'event', 'Home', 'Click', 'mobile-menu');">
+                                    <a class='close-button' href="<?php echo $sUrl; php?>/#home-section" title="<?php echo $sHome; php?>" data-scroll onClick="ga('send', 'event', 'Home', 'Click', 'mobile-menu');">
                                         <?php echo $sHome; php?>
                                     </a>
                                 </li>
                                 <!-- /Home -->
                                 <!-- Services -->
                                 <li>
-                                    <a href="<?php echo $sUrl; php?>/#services-section" title="<?php echo $sServices; php?>" data-scroll onClick="ga('send', 'event', 'Services', 'Click', 'mobile-menu');">
+                                    <a class='close-button' href="<?php echo $sUrl; php?>/#services-section" title="<?php echo $sServices; php?>" data-scroll onClick="ga('send', 'event', 'Services', 'Click', 'mobile-menu');">
                                         <?php echo $sServices; php?>
                                     </a>
                                 </li>
                                 <!-- /Services -->
                                 <!-- Skills -->
                                 <li>
-                                    <a href="<?php echo $sUrl; php?>/#skills-section" title="<?php echo $sSkills; php?>" data-scroll onClick="ga('send', 'event', 'Skills', 'Click', 'mobile-menu');">
+                                    <a class='close-button' href="<?php echo $sUrl; php?>/#skills-section" title="<?php echo $sSkills; php?>" data-scroll onClick="ga('send', 'event', 'Skills', 'Click', 'mobile-menu');">
                                         <?php echo $sSkills; php?>
                                     </a>
                                 </li>
                                 <!-- /Skills -->
                                 <!-- Resume -->
                                 <li>
-                                    <a href="<?php echo $sUrl; php?>/#resume-section" title="<?php echo $sResume; php?>" data-scroll onClick="ga('send', 'event', 'Resumes', 'Click', 'mobile-menu');">
+                                    <a class='close-button' href="<?php echo $sUrl; php?>/#resume-section" title="<?php echo $sResume; php?>" data-scroll onClick="ga('send', 'event', 'Resumes', 'Click', 'mobile-menu');">
                                         <?php echo $sResume; php?>
                                     </a>
                                 </li>
                                 <!-- /Resume -->
                                 <!-- Contact -->
                                 <li>
-                                    <a href="<?php echo $sUrl; php?>/#contact-section" title="<?php echo $sContact; php?>" data-scroll onClick="ga('send', 'event', 'Contact', 'Click', 'mobile-menu');">
+                                    <a class='close-button' href="<?php echo $sUrl; php?>/#contact-section" title="<?php echo $sContact; php?>" data-scroll onClick="ga('send', 'event', 'Contact', 'Click', 'mobile-menu');">
                                         <?php echo $sContact; php?>
                                     </a>
                                 </li>
