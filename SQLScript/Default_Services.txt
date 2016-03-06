@@ -8,10 +8,10 @@ INSERT INTO tServices(Code,
                       OrderNo) 
 VALUES('Srv_1', 
        'Développement Web', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analyse, architecture et développement de sites et services web transactionnel.', 
        'pe-7s-global', 
        'Web Development', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analysis, architecture and development of transactional websites and services.', 
        'pe-7s-global',
        1);
        
@@ -25,10 +25,10 @@ INSERT INTO tServices(Code,
                       OrderNo) 
 VALUES('Srv_2', 
        'Développement Applications', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analyse, architecture et développement d''applications et services pour Windows.', 
        'pe-7s-browser', 
        'Applications Development', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analysis, architecture and development of applications and services for Windows.', 
        'pe-7s-browser',
        2);
        
@@ -42,10 +42,10 @@ INSERT INTO tServices(Code,
                       OrderNo) 
 VALUES('Srv_3', 
        'Développement Mobile', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analyse, architecture et développement de site web adaptatif (responsive) et d''application pour Android, iOS et Windows Phone/Metro.', 
        'pe-7s-phone', 
        'Mobile Development', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analysis, architecture and development of responsive web site and mobile application for Android, iOS and Windows Phone/Metro.', 
        'pe-7s-phone',
        3);
        
@@ -59,9 +59,9 @@ INSERT INTO tServices(Code,
                       OrderNo) 
 VALUES('Srv_4', 
        'Analyses, optimisation, conseils', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Analyste d''affaires, spécification des exigences logicielles, architecture logiciel, révision du code et tests de performance.', 
        'pe-7s-display1', 
        'Analysis, optimization, tips', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed Morbi accumsan ipsum velit.', 
+       'Business analyst, software requirements specification, software architecture, code review and benchmarks.', 
        'pe-7s-display1',
        4);      

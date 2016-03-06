@@ -249,9 +249,9 @@ jQuery(document).ready(function () {
             transition_speed : 900, // Speed of transition
             slide_links : '0',
             slides : [
-                {image : '/images/slider/001.jpg', title : '', thumb : '', url : ''},
-                {image : '/images/slider/002.jpg', title : '', thumb : '', url : ''},
-                {image : '/images/slider/003.jpg', title : '', thumb : '', url : ''}
+                {image : ((onMobile === false) ? '/images/slider/001.jpg' : '/images/slider/001_mobile.jpg'), title : '', thumb : '', url : ''},
+                {image : ((onMobile === false) ? '/images/slider/002.jpg' : '/images/slider/002_mobile.jpg'), title : '', thumb : '', url : ''},
+                {image : ((onMobile === false) ? '/images/slider/003.jpg' : '/images/slider/003_mobile.jpg'), title : '', thumb : '', url : ''}
             ]
         });
     });

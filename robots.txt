@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
-
+Disallow: /juridique/termes-conditions
+Disallow: /juridique/politique-vie-privee
+Disallow: /en/legal/terms-conditions
+Disallow: /en/legal/privacy-policy
 Sitemap: http://www.solutionsyannickthibault.com/sitemap.xml

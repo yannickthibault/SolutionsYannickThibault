@@ -6,9 +6,9 @@ INSERT INTO tPrices(Code,
                     OrderNo) 
 VALUES('Pri_1', 
        'Prix Boomerang 2013 - Site ou application transactionelle', 
-       'Jean Coutu a revu son site internet pour mieux accompagner sa clientèle une fois à la maison. Achats en ligne, commande de prescriptions, infolettres ont amélioré l’expérience virtuelle du consommateur.', 
+       'Jean Coutu a revu son site internet pour mieux accompagner sa clientèle une fois à la maison. Achats en ligne, commande de prescriptions et infolettres ont amélioré l’expérience virtuelle du consommateur.', 
        'Prix Boomerang 2013 - Site ou application transactionelle', 
-       'Jean Coutu a revu son site internet pour mieux accompagner sa clientèle une fois à la maison. Achats en ligne, commande de prescriptions, infolettres ont amélioré l’expérience virtuelle du consommateur.',
+       'Jean Coutu has revised its website to better support its customers once at home. Online shopping, order prescriptions and newsletters improved consumer virtual experience.',
        1);
        
 INSERT INTO tPrices(Code, 
@@ -19,9 +19,9 @@ INSERT INTO tPrices(Code,
                     OrderNo) 
 VALUES('Pri_2', 
        'Bell 2014 - Mérite Encore Plus', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Développement d''une application mobile pour les gestionnaires. Cette application permet de réduire le temps administratif des gestionnaires en extrayant les données et la compilation de rapports. Il permet aux gestionnaires d''être sur le terrain avec la possibilité de signaler les résultats en temps réel.', 
        'Bell 2014 - Mérite Encore Plus', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       'Development of a manager mobile application. This application helps to reduce managers'' administrative time in the office by pulling data and compiling reports. It allows managers to be in the field with the ability to report findings in real time.',
        2);
        
 INSERT INTO tPrices(Code, 
@@ -32,9 +32,9 @@ INSERT INTO tPrices(Code,
                     OrderNo) 
 VALUES('Pri_3', 
        'Bell 2015 - Mérite Encore', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Une application avait des problèmes de perfomance pendant les heures de pointe, nous avons développé une stratégie pour surmonter le problème. Nous avons testé différentes parties du processus, nous avons analysé les données et nous avons optimisé les routines. Nous sommes arrivés avec une nouvelle version qui était de 1 000 fois plus performante (selon les bancs de test).', 
        'Bell 2015 - Mérite Encore', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       'An application was having some perfomance problems during rush hours, we developped a succesful strategy to overcome with the problem. We tested in different parts of the process, we analyzed data and we optimized routines. Finally we got with a new version that was 1 000 times more performant (according to bench mark tests).',
        3);
        
 INSERT INTO tPrices(Code, 
@@ -45,7 +45,7 @@ INSERT INTO tPrices(Code,
                     OrderNo) 
 VALUES('Pri_4', 
        'Bell 2014 - Mérite Encore', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.', 
+       'Développement d''une application mobile pour les gestionnaires. Cette application permet de réduire le temps administratif des gestionnaires en extrayant les données et la compilation de rapports. Il permet aux gestionnaires d''être sur le terrain avec la possibilité de signaler les résultats en temps réel.', 
        'Bell 2014 - Mérite Encore', 
-       'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Nam nec tellus a odio tincidunt auctor a ornare odio.',
+       'Development of a manager mobile application. This application helps to reduce managers'' administrative time in the office by pulling data and compiling reports. It allows managers to be in the field with the ability to report findings in real time.',
        4);                     

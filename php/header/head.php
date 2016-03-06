@@ -46,12 +46,12 @@
     // Translation
     if ($sLang == 'fr') {    	
     	$sTitle = 'Solutions Yannick Thibault';
-    	$sMetaKeywords = 'Solutions Yannick Thibault, Yannick, Thibault, Yannick Thibault, Programmeur, Développeur, Architecte';
+    	$sMetaKeywords = 'Yannick Thibault,Solutions Yannick Thibault,Yannick,Thibault,Consultant,Programmeur,Développeur,Architecte,.Net,C#,VB.Net,PHP,Travailleur indépendant,Analyse,Architecture,Développement,Expert,Android,iOS,Analyste d\'affaires,Spécification des exigences logicielles,Architecture logiciel,Révision du code,Tests de performance,OOP,MVVM,MVC,SQL,WPF,Agile,HTML,CSS,JS,Javascript,JQuery,Entity framework,NHibernate,Java,Objective-C,WordPress,Magento,EPI Server,WCF,Telerik,514-250-7010,5142507010,Solutions informatiques';
     	$sMetaDescription = 'Solutions Yannick Thibault';    	
     }
     else {
     	$sTitle = 'Yannick Thibault Solutions';
-    	$sMetaKeywords = 'Yannick Thibault Solutions, Yannick, Thibault, Yannick Thibault, Programmer, Developer, Architect';
+    	$sMetaKeywords = 'Yannick Thibault,Yannick Thibault Solutions,Yannick, Thibault,Consultant,Programmer,Developer,Architect,.Net,C#,VB.Net,PHP,Freelancer,Analysis,Architecture,Development,Expert,Android,iOS,Business analyst,Software requirements specification,Software architecture,Code review,Benchmarks,OOP,MVVM,MVC,SQL,WPF,Agile,HTML,CSS,JS,Javascript,JQuery,Entity framework,NHibernate,Java,Objective-C,WordPress,Magento,EPI Server,WCF,Telerik,514-250-7010,5142507010,IT solutions';
     	$sMetaDescription = 'Yannick Thibault Solutions';    	
     }
 php?>
