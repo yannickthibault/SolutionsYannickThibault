@@ -1,7 +1,7 @@
         <script type="text/javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="/js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/plugins/plugin.min.js"></script>
-        <script type="text/javascript" src="/js/Sponshy.min.js"></script>       
+        <script type="text/javascript" src="/js/syt_script.min.js"></script>       
         <!--[if lt IE 9]>
             <script src="/js/plugins/html5shiv.min.js"></script>
             <script src="/js/plugins/selectivizr.min.js"></script>
